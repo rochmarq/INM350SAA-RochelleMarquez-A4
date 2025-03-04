@@ -55,6 +55,10 @@ h6 {
     font-size: 15px;
 }
 
+legend {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
 label {
     display: block;
     width: 100%;
