@@ -46,7 +46,7 @@
             <article>
                 <div class="image-part">
                     <a href="">
-                        <img width="960" height="750" src="/assets/images/top-places-you-should-visit-right-now.jpg" alt="">  
+                        <img width="960" height="750" src="/assets/images/top-places-you-should-visit-right-now.jpg" alt="View of the sea from a sitting area in Greece">  
                     </a>
                 </div>
 
@@ -60,18 +60,21 @@
                     <div class="post-list-entry">
                         <p>Contact us to learn more!</p>
                         <form action="/" method="post">
-                            <label>Name</label>
-                            <input type="text" name="fullname" required />
-                            
-                            <label>Email</label>
-                            <input type="email" name="email" required />
-
-                            <div class="flexbox">
-                                <span></span>
-                                <label class="check">Check Me (required)</label>
-                            </div>
-
-                            <input type="submit" value="Submit" />
+                            <fieldset>
+                                <legend>Sections marked with an * are required.</legend>
+                                <label for="name">Name*</label>
+                                <input type="text" id="name" name="fullname" required />
+                                
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" required />
+    
+                                <div class="flexbox">
+                                    <span id="check" role="checkbox" aria-required="true" aria-checked="false"></span>
+                                    <label for="check" class="check">Check Me (required)</label>
+                                </div>
+    
+                                <input type="submit" value="Submit" />
+                            </fieldset>
                         </form>
                     </div>
                 </div>
@@ -82,7 +85,7 @@
     <footer id="footer">
         <div class="container">
             <div class="footer-logo">
-                <a href=""><img src="/assets/images/footer-logo.png" alt=""></a>
+                <a href=""><img src="/assets/images/footer-logo.png" alt="Dreamla website footer logo - the logo is `Dreamla` in a brush script font with an brush stroke spanning the start of the E to the start of the M"></a>
             </div>  
 
             <div class="footer-social-links">
